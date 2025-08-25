@@ -1,159 +1,216 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shree Hanuman Tyre & Repairing Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
+    :root{
+      --brand:#e53935;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --line:#e5e7eb;
+      --radius:20px;
     }
-    header {
-      background: #d32f2f;
-      color: white;
-      padding: 15px;
-      text-align: center;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background:#fafafa;
     }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    .hero{
+      background:var(--brand);
+      color:#fff;
+      padding:48px 20px 40px;
+      text-align:center;
     }
-    h2 {
-      color: #333;
+    .hero h1{
+      margin:0 0 8px;
+      font-family:"Baloo 2", cursive;
+      font-size:clamp(28px,5vw,44px);
+      letter-spacing:.5px;
+      line-height:1.1;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .hero p{
+      margin:0;
+      opacity:.95;
+      font-size:clamp(14px,2.4vw,18px);
     }
-    li {
-      background: #eee;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 5px;
+    .wrap{
+      max-width:1000px;
+      margin:-24px auto 56px;
+      padding:0 16px;
     }
-    .contact {
-      margin-top: 20px;
-      padding: 15px;
-      background: #ffebee;
-      border-radius: 10px;
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px;
+      box-shadow:0 8px 24px rgba(0,0,0,.08);
+      border:1px solid var(--line);
     }
-    .contact a {
-      color: #d32f2f;
-      text-decoration: none;
-      font-weight: bold;
+    .title{
+      font-family:"Baloo 2", cursive;
+      font-size:clamp(22px,4vw,34px);
+      margin:4px 0 18px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
+    }
+    .section h3{
+      margin:2px 0 10px;
+      font-family:"Baloo 2", cursive;
+      font-size:clamp(18px,3.5vw,26px);
+    }
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+    thead th{
+      text-align:left;
+      background:#f3f4f6;
+      border-bottom:1px solid var(--line);
+      padding:12px 14px;
+      font-weight:600;
+      font-size:14px;
+    }
+    tbody td{
+      padding:12px 14px;
+      border-bottom:1px solid var(--line);
+      font-size:15px;
+    }
+    tbody tr:last-child td{border-bottom:none}
+    .muted{color:var(--muted)}
+    .note{
+      margin-top:14px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .badge{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      background:#fee2e2;
+      color:#991b1b;
+      font-size:12px;
+      font-weight:600;
+      margin-left:6px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Shree Hanuman Tyre & Repairing Center</h1>
-    <p>Jarmundi, Dumka - 814141</p>
-  </header>
+  <header class="hero">
+    <h1>Shree Hanuman Tyre &amp; Repairing Center</h1>
+    <p>Jarmundi, Dumka – 814141</p>
+  </header>  <main class="wrap">
+    <section class="card">
+      <h2 class="title">हमारी सेवाएँ</h2><div class="grid">
+    <!-- TYRE -->
+    <div class="section">
+      <h3>Tyre <span class="badge">Brand + Size + Price</span></h3>
+      <table aria-label="Tyre price list">
+        <thead>
+          <tr>
+            <th>Brand / Product</th>
+            <th>Size</th>
+            <th>Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DOLFINE FRONT TYRE</td>
+            <td>2.75–18</td>
+            <td>1300</td>
+          </tr>
+          <tr>
+            <td>CEAT Milaze</td>
+            <td>3.00–18</td>
+            <td>1700</td>
+          </tr>
+          <tr>
+            <td>TVS Dragon</td>
+            <td>100/90–17</td>
+            <td>1800</td>
+          </tr>
+          <tr>
+            <td>DOLFINE FRONT TYRE</td>
+            <td>2.75-17</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <td>RALCO Road grip</td>
+            <td>3.75-12</td>
+            <td>1350</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="note">आवश्यकता अनुसार अन्य ब्रांड उपलब्ध।</p>
+    </div>
 
-  <div class="container">
-    <section>
-  <h2>हमारी सेवाएँ</h2>
+    <!-- TUBE -->
+    <div class="section">
+      <h3>Tube</h3>
+      <table aria-label="Tube price list">
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Size</th>
+            <th>Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MRF</td>
+            <td>2.75–18</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>CEAT</td>
+            <td>3.00–18</td>
+            <td>350</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <!-- Tyre Section -->
-  <h3>Tyre</h3>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Size</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>2.75-18</td>
-      <td>₹1200</td>
-    </tr>
-    <tr>
-      <td>3.00-18</td>
-      <td>₹1500</td>
-    </tr>
-    <tr>
-      <td>100/90-17</td>
-      <td>₹1800</td>
-    </tr>
-  </table>
-
-  <!-- Tube Section -->
-  <h3>Tube</h3>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Size</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>2.75-18</td>
-      <td>₹300</td>
-    </tr>
-    <tr>
-      <td>3.00-18</td>
-      <td>₹350</td>
-    </tr>
-  </table>
-
-  <!-- Mobile Oil Section -->
-  <h3>Mobile Oil</h3>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Brand</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>Castrol (1L)</td>
-      <td>₹450</td>
-    </tr>
-    <tr>
-      <td>Servo (1L)</td>
-      <td>₹400</td>
-    </tr>
-  </table>
-
-  <!-- Grease Section -->
-  <h3>Grease</h3>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Type</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>General Grease (100g)</td>
-      <td>₹50</td>
-    </tr>
-    <tr>
-      <td>High Temp Grease (100g)</td>
-      <td>₹70</td>
-    </tr>
-  </table>
-
-  <!-- Puncture Repair Section -->
-  <h3>Puncture Repair</h3>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Service</th>
-      <th>Price</th>
-    </tr>
-    <tr>
-      <td>Bike Tyre Puncture</td>
-      <td>₹50</td>
-    </tr>
-    <tr>
-      <td>Car Tyre Puncture</td>
-      <td>₹100</td>
-    </tr>
-  </table>
-</section>
-    <div class="contact">
-      <h3>संपर्क करें</h3>
-      <p>📞 मोबाइल: <a href="tel:9229387889">9229387889</a></p>
+    <!-- OIL -->
+    <div class="section">
+      <h3>Mobile Oil</h3>
+      <table aria-label="Oil price list">
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Quantity</th>
+            <th>Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Castrol</td>
+            <td>1 Ltr</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>Servo</td>
+            <td>1 Ltr</td>
+            <td>380</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+
+  <p class="note">नोट: ऊपर दिए गए रेट अनुमानित हैं और समय/उपलब्धता के अनुसार बदल सकते हैं।</p>
+</section>
+
+  </main>
 </body>
-</html>
+              </html>
